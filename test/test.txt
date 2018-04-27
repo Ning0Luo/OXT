@@ -1,0 +1,3 @@
+Sets do not record element position or order of insertion. Accordingly, sets do not support indexing, slicing, or other sequence-like behavior.
+ning
+and

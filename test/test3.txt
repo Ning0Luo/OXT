@@ -1,0 +1,6 @@
+
+Sets are implemented using dictionaries. They cannot contain mutable elements such as lists or dictionaries. However, they can contain immutable collections.
+Ls
+ning
+A character is represented on a screen or on paper by a set of graphical elements that’s called a glyph. The glyph for an uppercase A, for example, is two diagonal strokes and a horizontal stroke, though the exact details will depend on the font being used. Most Python code doesn’t need to worry about glyphs; figuring out the correct glyph to display is generally the job of a GUI toolkit or a terminal’s font renderer.
+

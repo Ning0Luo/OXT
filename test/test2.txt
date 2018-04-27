@@ -1,0 +1,3 @@
+is  but and if i am student but  however
+ning yesyesyes
+andcryptography and computer security, a length extension attack is a type of attack where an attacker can use Hash(message1) and the length of message1 to calculate Hash(message1 ‖ message2) for an attacker-controlled message2. In this context, signing a message is done by prepending the secret to the hash value ...
