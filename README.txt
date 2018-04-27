@@ -1,16 +1,16 @@
 This is document for anyone who want to run this implementation or test it.
-//address problems 
-
+Note: Current version only works on OSX.
 
 -----To set up----
-1.Open exe
-2.Open server
-3.There is an executable file named server
-4.Click it to run server 
-5.Return back to exe 
-6.Open client
-7.There is an executable file named client
-8.Click it to run client
+1.Install PyInstaller
+2.cd source\ code
+3.sh ./gen.sh # it will generate two folder under root path: exe/server and exe/client
+4.Open exe/server
+5.There is an executable file named server
+6.Click it to run server 
+7.Open exe/client
+8.There is an executable file named client
+9.Click it to run client
 
 -----To upload files----
 1.Set up and check out to the window for client 
