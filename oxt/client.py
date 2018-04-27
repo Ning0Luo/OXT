@@ -2,9 +2,9 @@
 # client.py
 
 import socket
-import  pickle
-from preprocess_f import database
-from OXT import OXT_client
+import pickle
+from .preprocess_f import database
+from .oxt_impl import OXT_client
 import os
 import sys
 
@@ -126,37 +126,38 @@ class client:
         self.s.close()
 
 
-
-c= client()
-operation = input("operation>")
-
-while True:
-    if operation == "upload":
-        print("dir> ", end='')
-        database_path = input()
-        print(database_path)
-        database = c.create_database(database_path)
-        c.upload_database(database, b"alice")
-
-    if operation == "search":
-        list = input("keywords>")
-        list = list.split(",")
-        index = c.retrive(list, b"alice")
-        files = set()
-        for i in index:
-            file = database.file_list[i]
-            files.add(file)
-        if len(files)==0:
-            print("no such files")
-        else:
-            print("result: ", files )
-
-    if operation == "exit":
-        break
-
+def run_client():
+    c= client()
     operation = input("operation>")
 
-c.close()
+    while True:
+        if operation == "upload":
+            print("dir> ", end='')
+            database_path = input()
+            print(database_path)
+            database = c.create_database(database_path)
+            c.upload_database(database, b"alice")
+
+        if operation == "search":
+            list = input("keywords>")
+            list = list.split(",")
+            index = c.retrive(list, b"alice")
+            files = set()
+            for i in index:
+                file = database.file_list[i]
+                files.add(file)
+            if len(files)==0:
+                print("no such files")
+            else:
+                print("result: ", files )
+
+        if operation == "exit":
+            break
+
+        operation = input("operation>")
+
+    c.close()
 
 
-
+if __name__ == "__main__":
+    run_client()

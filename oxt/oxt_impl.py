@@ -1,10 +1,10 @@
 import os
 import random
-import  crypto_tools
-from  DiffieHellman import  DiffieHellman
-from T_set import T_set_client
+from . import crypto_tools
+from .DiffieHellman import  DiffieHellman
+from .T_set import T_set_client
 import struct
-from preprocess_f import database
+from .preprocess_f import database
 
 class OXT_client:
     def __init__(self):

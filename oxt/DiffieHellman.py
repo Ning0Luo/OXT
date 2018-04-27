@@ -18,9 +18,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 import os
 import hashlib
-from crypto_tools import prf_512
+from .crypto_tools import prf_512
 from binascii import hexlify # For debug output
-from crypto_tools import egcd
+from .crypto_tools import egcd
 from cryptography.hazmat.primitives.asymmetric.dsa import generate_parameters
 from cryptography.hazmat.primitives.asymmetric.dsa import DSAParametersWithNumbers
 from cryptography.hazmat.backends import default_backend

@@ -1,6 +1,12 @@
 This is document for anyone who want to run this implementation or test it.
 Note: Current version only works on OSX.
 
+-----To install through pip-----
+0. assume the git repo path is ./OXT
+1. pip3 install ./OXT # it will automatically install some dependencies
+2. python3 -c 'import oxt; oxt.run_server()'
+3. python3 -c 'import oxt; oxt.run_client()'
+
 -----To set up----
 1.Install PyInstaller
 2.cd source\ code

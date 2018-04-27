@@ -1,5 +1,5 @@
 import os
-import crypto_tools
+from . import crypto_tools
 import random
 from bitstring import BitArray
 #key = int.from_bytes(os.urandom(256), byteorder="big")

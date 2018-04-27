@@ -2,7 +2,7 @@
 import socket
 import pickle
 import os
-import OXT
+from . import oxt_impl
 
 class Xtoken:
     def __init__(self,xtoken):
@@ -115,6 +115,9 @@ class server:
         conn.close()
         print("done!")
 
+def run_server():
+    s = server()
+    s.listen()
 
-s = server()
-s.listen()
+if __name__ == "__main__":
+    run_server()
