@@ -1,4 +1,4 @@
-nltk==3.2.5
-crypto==1.4.1
-cryptography==2.1.4
-bitstring==3.1.5
+nltk>=3.2.5
+crypto>=1.4.1
+cryptography>=2.1.4
+bitstring>=3.1.5
